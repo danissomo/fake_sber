@@ -26,4 +26,5 @@ docker run --name sber -d \
 docker start sber
 
 sleep 10
+pkill -f chromium
 sudo runuser -u $SUDO_USER -- chromium https://sber.ru:5000
